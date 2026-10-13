@@ -20,10 +20,19 @@ Android separates permissions into categories, and sensitive permissions require
 Resource: Request runtime permissions - https://developer.android.com/training/permissions/requesting
 
 ## Networking
+DNS over HTTPS (DoH) sends DNS queries and responses through an encrypted HTTPS connection instead of traditional unencrypted DNS transport. For citizens using the national login service, it helps prevent local network observers from reading or modifying DNS requests in transit. However, DoH does not hide queries from the chosen DNS resolver, conceal all connection metadata, or guarantee that DNS answers are authentic. DNSSEC provides separate protection for DNS data integrity.
+
+Resource: RFC 8484 - DNS Queries over HTTPS (DoH) - https://www.rfc-editor.org/rfc/rfc8484
 
 ## Cybersecurity
+Phishing-resistant authentication prevents attackers using fake login websites from obtaining reusable authentication secrets or valid responses. It cryptographically binds authentication to the legitimate website or communication channel. FIDO2/WebAuthn security keys and appropriately configured passkeys can provide phishing-resistant multi-factor authentication. Smart cards using client-authenticated TLS can also qualify. In contrast, passwords combined with SMS codes, email codes, or authenticator-app one-time passwords are not phishing-resistant because attackers can trick users into entering or relaying those codes.
+
+Resource: NIST SP 800-63B - Authenticators - https://pages.nist.gov/800-63-4/sp800-63b/authenticators/
 
 ## Data
+Under Oman's Personal Data Protection Law, the authority must identify its lawful basis for processing citizens' data and obtain explicit consent where required, recognizing applicable legal exceptions. It must explain processing purposes, protect confidentiality, assess risks, apply technical and organizational safeguards, and appoint a data protection officer. Citizens have rights concerning access, correction, and erasure, subject to legal conditions. The authority must also document processing and report qualifying personal data breaches to the ministry and affected individuals according to applicable rules.
+
+Resource: Royal Decree 6/2022 - Personal Data Protection Law (Consolidated) - https://decree.om/2022/l20220006/
 
 ## Misconception in My Track
 
