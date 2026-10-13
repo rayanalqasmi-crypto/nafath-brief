@@ -35,5 +35,7 @@ Under Oman's Personal Data Protection Law, the authority must identify its lawfu
 Resource: Royal Decree 6/2022 - Personal Data Protection Law (Consolidated) - https://decree.om/2022/l20220006/
 
 ## Misconception in My Track
+A common misconception is that OAuth 2.0 is a user authentication protocol and can independently prove who has logged in. In reality, OAuth 2.0 primarily provides delegated authorization to access protected resources. OpenID Connect adds an identity layer to OAuth 2.0 and introduces the ID Token to communicate authentication information. This distinction matters for a national digital login service because government applications must reliably identify citizens, not merely receive permission to access resources. The OpenID Connect Core 1.0 specification, in Section 1, "Introduction," describes OpenID Connect as an identity layer on top of OAuth 2.0.
 
 ## Open Question
+How can a national digital login service securely manage OpenID Connect sessions across multiple government applications while allowing citizens to sign out safely from all connected services?
